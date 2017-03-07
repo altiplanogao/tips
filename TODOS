@@ -14,3 +14,9 @@ avro
 karaf
 
 zookeeper
+
+etcd
+
+redis
+
+mongodb
