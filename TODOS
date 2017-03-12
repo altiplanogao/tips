@@ -6,11 +6,6 @@ bytebuddy
 javaassist
 buildin java compiler
 
-
-protobuf + gRPC
-thrift
-avro
-
 karaf
 
 zookeeper
