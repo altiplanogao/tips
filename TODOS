@@ -4,9 +4,16 @@ karaf
 
 <docker技术入门与实践>
 zookeeper
+https://zookeeper.apache.org/
+https://zookeeper.apache.org/doc/r3.4.9/zookeeperStarted.html
 doozer
+https://github.com/ha/doozerd
 consul
+https://www.consul.io/
+https://www.consul.io/intro/vs/zookeeper.html
 etcd
+https://github.com/coreos/etcd
+
 
 redis
 
