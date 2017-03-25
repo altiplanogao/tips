@@ -5,6 +5,7 @@ karaf
 <docker技术入门与实践>
 zookeeper
 doozer
+consul
 etcd
 
 redis
