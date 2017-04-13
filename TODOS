@@ -7,8 +7,6 @@ hadoop
 spark
 strom
 
-karaf
-
 <docker技术入门与实践>
 zookeeper
 https://zookeeper.apache.org/
@@ -22,10 +20,8 @@ etcd
 https://github.com/coreos/etcd
 http://www.infoq.com/cn/articles/raft-paper
 
-http://blog.csdn.net/cszhouwei/article/details/38374603
-
-redis
+Raft:http://blog.csdn.net/cszhouwei/article/details/38374603
 
 mongodb
 
-http://blog.csdn.net/sunxinhere/article/details/7968886
+各类MQ比较:http://blog.csdn.net/sunxinhere/article/details/7968886
