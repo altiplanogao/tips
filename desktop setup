@@ -20,3 +20,10 @@ nodejs
 
 eclipse
 intellij
+
+
+     line: '#\1\2\3'
+     backrefs: yes
++  when: cluster_mode
+
+when: ansible_os_family == "RedHat"
