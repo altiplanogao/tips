@@ -57,3 +57,43 @@ fy29zfpMG3BkhpuQX2nJlkDs0MmnfljI/q+l3OoPg5Dvbguw+fx/kf+bhiny/6ppU/zfC3BYL90F
 wgtiJf/PfqDuto1/8P/PtKxk/28ZJv3/2weeXv+nf6D/2zY25n9OReZ/y7QNi/h/H9hi/1fKdmKY
 DraPvuiRkJdMQ/VcNgnT/x5quoWAknQedNSBxKTkny4vPXYCgUAgEAgEAoFAIBAIBAKBQCAQCAQC
 gUAgEAgEAoFAIBAIhB8RfwPz5EgCAFAAAA==
+
+
+#!/usr/bin/env python
+
+import urllib2
+import json
+from datetime import datetime
+import time
+
+proxies = {
+  'http': 'http://127.0.0.1:1080/',
+  'https': 'http://127.0.0.1:1080/',
+}
+proxy_support = urllib2.ProxyHandler(proxies)
+opener = urllib2.build_opener(proxy_support)
+opener.addheaders = [
+    ('User-Agent','Mozilla/5.0 (Windows NT 6.1; rv:5.0) Gecko/20100101 Firefox/5.0'),
+    ("Accept-Language","zh-cn,zh;q=0.5")
+]
+urllib2.install_opener(opener=opener)
+# response = urllib2.urlopen('http://www.baidu.com/')
+pp='https://data-asg.goldprice.org/dbXRates/USD,USD,USD,CNY,USD,USD'
+
+ms_start=time.time()
+response = urllib2.urlopen(pp)
+ms_open=time.time()
+result=response.read()
+result_dict=json.loads(result)
+
+
+diff1=ms_open-ms_start
+datetime_start=datetime.fromtimestamp(ms_start)
+datetime_open=datetime.fromtimestamp(ms_open)
+
+time_ts=0.001*result_dict['ts']
+time_tsj=0.001*result_dict['tsj']
+datetime_ts=datetime.fromtimestamp(time_ts)
+datetime_tsj=datetime.fromtimestamp(time_tsj)
+diff3=time_ts-time_tsj
+
