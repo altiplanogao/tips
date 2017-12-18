@@ -97,3 +97,4 @@ datetime_ts=datetime.fromtimestamp(time_ts)
 datetime_tsj=datetime.fromtimestamp(time_tsj)
 diff3=time_ts-time_tsj
 
+http://python.jobbole.com/81339/
