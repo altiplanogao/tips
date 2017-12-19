@@ -1,0 +1,39 @@
+version: "3"
+services:
+  mongo:
+    image: mongo:3.6.0
+    container_name: mongo
+    hostname: mongo
+    ports:
+      - "27017:27017"
+    networks:
+      - precious-net
+      
+  mongo-express:
+    image: mongo-express:0.42.2
+    container_name: mongo-express
+    hostname: mongo-express
+    deploy:
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 3
+        window: 120s
+    environment:
+      ME_CG_MONGODB_SERVER: mongo
+    ports:
+      - "8081:8081"
+    networks:
+      - precious-net
+
+
+  redis:
+    image: redis:4.0.6
+    container_name: redis
+    hostname: redis
+    ports:
+      - "6379:6379"
+    networks:
+      - precious-net
+networks:
+  precious-net:
