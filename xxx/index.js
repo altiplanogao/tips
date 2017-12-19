@@ -29,8 +29,6 @@ var url = 'https://data-asg.goldprice.org/dbXRates/USD,USD,USD,CNY,USD,USD'
 // ]
 
 var options = {
-  host: '10.177.96.112',
-  port: 1080,
   url: url,
   headers: {
     'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; rv:5.0) Gecko/20100101 Firefox/5.0'
