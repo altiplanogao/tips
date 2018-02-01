@@ -164,7 +164,53 @@ Reset updates:
 | mixed (default) | Yes | No | Yes |
 | hard | Yes | Yes | Yes |
 
+# git revert
+```
+# revert a commit
+git revert commit_id
+```
 # Rebase
+You can rebase your current local branch onto a remote-tracking branch. The following commands demonstrate that.
+
+```
+# assume you want to rebase master based on the latest fetch
+# therefore check it out
+git checkout master
+
+# update your remote-tracking branch
+git fetch
+
+# rebase your master onto origin/master
+git rebase origin/master
+```
+
+```
+                                 (master)
+ [Commit 1]<---[Commit 2]<---+---[Commit 4]
+                             |
+                             |
+                             +---[Commit 3]
+                                 (branch_1)
+                                 (HEAD)
+
+            git checkout branch_1
+            git rebase master
+            
+                             (master)
+ [Commit 1]<---[Commit 2]<---[Commit 4]
+                                |
+                                |
+                                +---[Commit 3']
+                                    (branch_1)
+                                    (HEAD)
+```
+## abort rebase
+```
+# abort rebase and recreate the situation before the rebase
+git rebase --abort
+```
+
+# Sketch
 Stash
 merge
 fetch != pull
