@@ -72,3 +72,46 @@ diff3=time_ts-time_tsj
 
 http://python.jobbole.com/81339/
 https://blog.sicara.com/compare-best-javascript-chart-libraries-2017-89fbe8cb112d
+
+
+.
+├── LICENSE
+├── Machine Learning
+│?? ├── week01
+│?? │?? ├── Lecture1 (Introduction).pdf
+│?? │?? ├── Lecture2 (Linear Regression with One Variable).pdf
+│?? │?? └── Lecture3 (Linear Algebra Review).pdf
+│?? ├── week02
+│?? │?? ├── ex1 (Linear Regression)
+│?? │?? ├── Lecture4 (Linear Regression with Multiple Variables).pdf
+│?? │?? └── Lecture5 (Octave.Matlab Tutorial).pdf
+│?? ├── week03
+│?? │?? ├── ex2 (Logistic Regression)
+│?? │?? ├── Lecture6 (Logistic Regression).pdf
+│?? │?? └── Lecture7 (Regularization).pdf
+│?? ├── week04
+│?? │?? ├── ex3 (Multi-class Classification and Neural Networks)
+│?? │?? └── Lecture8 (Neural Networks-Representation).pdf
+│?? ├── week05
+│?? │?? ├── ex4 (Neural Network Learning)
+│?? │?? └── Lecture9 (Neural Networks-Learning).pdf
+│?? ├── week06
+│?? │?? ├── ex5 (Regularized Linear Regression and Bias.Variance)
+│?? │?? ├── Lecture10 (Advice for Applying Machine Learning).pdf
+│?? │?? └── Lecture11 (Machine Learning System Design).pdf
+│?? ├── week07
+│?? │?? ├── ex6 (Support Vector Machines)
+│?? │?? └── Lecture12 (Support Vector Machines).pdf
+│?? ├── week08
+│?? │?? ├── ex7 (K-Means Clustering and PCA)
+│?? │?? ├── Lecture13 (Unsupervised Learning).pdf
+│?? │?? └── Lecture14 (Dimensionality Reduction).pdf
+│?? ├── week09
+│?? │?? ├── ex8 (Anomaly Detection and Recommender Systems)
+│?? │?? ├── Lecture15 (Anomaly Detection).pdf
+│?? │?? └── Lecture16 (Recommender Systems).pdf
+│?? ├── week10
+│?? │?? └── Lecture17 (Large Scale Machine Learning).pdf
+│?? └── week11
+│??     └── Lecture18 (Application Example. Photo OCR).pdf
+└── README.md
